@@ -1,71 +1,63 @@
-<%@page import="com.mycompany.projeto.domain.User"%>
+<%@page import="br.fjn.edu.pos.web.domain.User"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="css/home.css" rel="stylesheet">
         <title>Página Inicial</title>
     </head>
     <body>
-          <%  
-             User user = (User) session.getAttribute("userLogged");
-         %>
-        <nav class="navbar navbar-dark" style="background-color: #046370;">
-            <a class="navbar-brand">Empresa</a>
-            <div class="form-inline">
-                <button type="button" class="btn btn-danger">Sair</button>
+        <%
+            User user = (User) session.getAttribute("userLogged");
+        %>
+        <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Empresa</a>
+            <div class="btn-group" >
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Usuário: <%=user.getName()%>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Sair</a>                  
+                </div>
             </div>
         </nav>
         <div class="container-fluid">
             <div class="row">
                 <nav class="col-md-2 d-none d-md-block bg-light sidebar">
                     <div class="sidebar-sticky">
-                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                            <h1 style="font-size: 30px;">Menu</h1>
-                        </h6>
-                        <ul class="nav flex-column mb-2">
+                        <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="home.jsp">
-                                    <img src="icons/casa.svg" alt="" width="32" height="32" title="casa">
-                                    <button type="button" class="btn btn-outline-info">Página Inicial</button>
+                                <a class="nav-link active" href="home.jsp">
+                                    <img src="icons/house.svg" alt="" width="32" height="32" title="Bootstrap">
+                                    Página Inicial <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="cadastrar.jsp">
-                                    <img src="icons/adicionar.svg" alt="" width="32" height="32" title="adicionar">
-                                    <button type="button" class="btn btn-outline-info">Cadastrar Alunos</button>
+                                <a class="nav-link" href="customer/create.jsp">
+                                    <img src="icons/check-box.svg" alt="" width="32" height="32" title="Bootstrap">
+                                    Cadastrar Aluno
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <img src="icons/avatar.svg" alt="" width="32" height="32" title="avatar">
-                                    <button type="button" class="btn btn-outline-info"> Alunos Cadastrados</button>
+                                <a class="nav-link" href="customer/customers.jsp">
+                                    <img src="icons/file-text.svg" alt="" width="32" height="32" title="Bootstrap">
+                                    Alunos Cadastrados
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <img src="icons/edit.svg" alt="" width="32" height="32" title="edit">
-                                    <button type="button" class="btn btn-outline-info">Editar</button>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <img src="icons/excluir.svg" alt="" width="32" height="32" title="excluir">
-                                    <button type="button" class="btn btn-outline-info">Excluir</button>
-                                </a>
-                            </li>
-                        </ul>
+                        </ul>                      
                     </div>
                 </nav>
                 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h1 class="h2">Página Inicial</h1>
+                        <h1 class="h2">Página Inicial</h1>                      
                     </div>
                     <div>
-                        <p>Conteúdo aqui<p>                    
+                        <h1>Bem vindo, <%=user.getName()%> !!!</h1>
                     </div>
-                    <canvas class="my-4 w-100" id="myChart" width="900" height="400"></canvas>    
+                    <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+
                 </main>
             </div>
         </div>
