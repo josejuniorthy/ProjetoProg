@@ -9,7 +9,10 @@
     </head>
     <body>
         <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Empresa</a>
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+            <img src="../icons/quadro-negro.svg" alt="" width="32" height="32" title="Bootstrap">
+            ESCOLA AED
+            </a>
             <ul class="navbar-nav px-3">
                 <li class="nav-item text-nowrap">
                     <button type="button" class="btn btn-outline-danger">Sair</button>
@@ -24,7 +27,7 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="../home.jsp">
                                     <img src="../icons/house.svg" alt="" width="32" height="32" title="Bootstrap">
-                                    Dashboard <span class="sr-only">(current)</span>
+                                    Página Inicial <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -53,14 +56,18 @@
                                     <input type="text" class="form-control" id="name" name="name"placeholder="Israel Morais Pereira"/>                                                
                                 </div> 
                                 <div class="row">                                          
-                                    <div class="col-md-9 mb-3">
+                                    <div class="col-md-6 mb-3">
                                         <label for="endereco">Endereço</label>
-                                        <input type="text" class="form-control" id="endereco" placeholder="Rua: Fulano de tal, Juazeiro do Norte-CE">                                                
-                                    </div>  
-                                    <div class="col-md-3 mb-3">
+                                        <input type="text" class="form-control" id="endereco" placeholder="Rua: Fulano de tal">                                                
+                                    </div>
+                                    <div class="col-md-1 mb-3">
                                         <label for="numerocasa">N°</label>
                                         <input type="number" class="form-control" id="numero" placeholder="Ex: 1046"> 
                                     </div>
+                                    <div class="col-md-5 mb-3">
+                                        <label for="cidade">Cidade/ES</label>
+                                        <input type="text" class="form-control" id="cidade" placeholder="Juazeiro do Norte-CE"> 
+                                    </div>                                    
                                 </div>  
                                 <div class="row">
                                     <div class="col-md-6 mb-3">

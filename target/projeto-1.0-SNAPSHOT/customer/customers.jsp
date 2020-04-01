@@ -9,7 +9,10 @@
     </head>
     <body>
         <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Empresa</a>
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+            <img src="../icons/quadro-negro.svg" alt="" width="32" height="32" title="Bootstrap">
+            ESCOLA AED
+            </a>
             <ul class="navbar-nav px-3">
                 <li class="nav-item text-nowrap">
                     <button type="button" class="btn btn-outline-danger">Sair</button>
@@ -24,7 +27,7 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="../home.jsp">
                                     <img src="../icons/house.svg" alt="" width="32" height="32" title="Bootstrap">
-                                    Dashboard <span class="sr-only">(current)</span>
+                                    Página Inicial <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item">

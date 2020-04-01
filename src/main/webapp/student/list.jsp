@@ -9,12 +9,10 @@
     </head>
     <body>
         <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Empresa</a>
-            <ul class="navbar-nav px-3">
-                <li class="nav-item text-nowrap">
-                    <button type="button" class="btn btn-outline-danger">Sair</button>
-                </li>
-            </ul>
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+            <img src="../icons/quadro-negro.svg" alt="" width="32" height="32" title="Bootstrap">
+            ESCOLA AED
+            </a>
         </nav>
         <div class="container-fluid">
             <div class="row">
@@ -24,17 +22,17 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="../home.jsp">
                                     <img src="../icons/house.svg" alt="" width="32" height="32" title="Bootstrap">
-                                    Dashboard <span class="sr-only">(current)</span>
+                                    Página Inicial <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../customer/create.jsp">
+                                <a class="nav-link" href="../student/create.jsp">
                                     <img src="../icons/check-box.svg" alt="" width="32" height="32" title="Bootstrap">
                                     Cadastrar Aluno
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../customer/customers.jsp">
+                                <a class="nav-link" href="../student/list.jsp">
                                     <img src="../icons/file-text.svg" alt="" width="32" height="32" title="Bootstrap">
                                     Alunos Cadastrados
                                 </a>
@@ -122,3 +120,4 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
 </html>
+

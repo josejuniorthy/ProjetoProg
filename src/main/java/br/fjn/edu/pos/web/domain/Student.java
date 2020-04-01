@@ -1,12 +1,12 @@
 package br.fjn.edu.pos.web.domain;
 
-public class Customer {
+public class Student {
     
     private String name;
     private String cpf;
     private Integer age;
 
-    public Customer(String name, String cpf, Integer age) {
+    public Student(String name, String cpf, Integer age) {
         this.name = name;
         this.cpf = cpf;
         this.age = age;
