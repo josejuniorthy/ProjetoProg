@@ -14,15 +14,21 @@
         %>
         <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
             <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Empresa</a>
-            <div class="btn-group" >
-                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="dropdown">
+                <button style="border: none" class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+ 
                     Usuário: <%=user.getName()%>
                 </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Sair</a>                  
+                <div class="dropdown-menu text-center " aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">
+                        <img src="icons/do-utilizador.svg" alt="" width="100" height="100" title="Bootstrap">                    
+                    </a>
+                    <a class="dropdown-item" href="#">User: <%=user.getName()%></a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Sair</a>                 
                 </div>
             </div>
-        </nav>
+        </nav>           
         <div class="container-fluid">
             <div class="row">
                 <nav class="col-md-2 d-none d-md-block bg-light sidebar">

@@ -47,7 +47,7 @@
                     </div>
                     <main>
                         <section>
-                            <form action="/projeto-programacao/customers" method="post">
+                            <form action="" method="">
                                 <div class="mb-3">
                                     <label for="name">Nome Completo</label>
                                     <input type="text" class="form-control" id="name" name="name"placeholder="Israel Morais Pereira"/>                                                
@@ -88,16 +88,7 @@
                                         <label for="email">Email<span class="text-muted">(Opcional)</span></label>
                                         <input type="email" class="form-control" id="email" placeholder="email@emal.com"> 
                                     </div>
-                                </div>                                      
-                                <hr class="mb-4">
-                                <div>
-                                    <label for="cpf">CPF:</label>
-                                    <input id="cpf" type="text" name="cpf"/>
-                                </div>
-                                <div>
-                                    <label for="age">Idade:</label>
-                                    <input id="age" type="text" name="age"/>
-                                </div>
+                                </div>                                                                                    
                                 <div>
                                     <hr class="mb-4">
                                     <button class="btn btn-primary btn-lg " type="submit">Cadastrar Aluno</button>
