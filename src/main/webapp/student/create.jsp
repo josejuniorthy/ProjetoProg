@@ -94,6 +94,7 @@
                                 <div>
                                     <hr class="mb-4">
                                     <button class="btn btn-primary btn-lg " type="submit">Cadastrar Aluno</button>
+                                       <button class="btn btn-primary btn-lg " type="submit">Limpar</button>
                                 </div>
                             </form>
                         </section>

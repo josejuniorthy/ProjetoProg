@@ -12,12 +12,7 @@
             <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
             <img src="../icons/quadro-negro.svg" alt="" width="32" height="32" title="Bootstrap">
             ESCOLA AED
-            </a>
-            <ul class="navbar-nav px-3">
-                <li class="nav-item text-nowrap">
-                    <button type="button" class="btn btn-outline-danger">Sair</button>
-                </li>
-            </ul>
+            </a>           
         </nav>
         <div class="container-fluid">
             <div class="row">
@@ -31,13 +26,13 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../customer/create.jsp">
+                                <a class="nav-link" href="../student/create.jsp">
                                     <img src="../icons/check-box.svg" alt="" width="32" height="32" title="Bootstrap">
                                     Cadastrar Aluno
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../customer/customers.jsp">
+                                <a class="nav-link" href="../student/list.jsp">
                                     <img src="../icons/file-text.svg" alt="" width="32" height="32" title="Bootstrap">
                                     Alunos Cadastrados
                                 </a>                          
@@ -99,6 +94,7 @@
                                 <div>
                                     <hr class="mb-4">
                                     <button class="btn btn-primary btn-lg " type="submit">Cadastrar Aluno</button>
+                                       <button class="btn btn-primary btn-lg " type="submit">Limpar</button>
                                 </div>
                             </form>
                         </section>
