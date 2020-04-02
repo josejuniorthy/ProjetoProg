@@ -1,3 +1,4 @@
+<%@page import="br.fjn.edu.pos.web.domain.User"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -8,12 +9,29 @@
         <title>Cadastrar Aluno</title>
     </head>
     <body>
+        <%
+            User user = (User) session.getAttribute("userLogged");
+        %>
         <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
             <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
-            <img src="../icons/quadro-negro.svg" alt="" width="32" height="32" title="Bootstrap">
-            ESCOLA AED
-            </a>           
-        </nav>
+                <img src="../icons/quadro-negro.svg" alt="" width="32" height="32" title="Bootstrap">
+                ESCOLA AED
+            </a>
+            <div class="dropdown">
+                <button style="border: none" class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="../icons/cartao-de-estudante.svg" alt="" width="40" height="40" title="cartao-de-estudante">  
+                    Usuário: <%=user.getName()%>
+                </button>
+                <div class="dropdown-menu text-center " aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">
+                        <img src="../icons/do-utilizador.svg" alt="" width="100" height="100" title="Bootstrap">                    
+                    </a>
+                    <a class="dropdown-item" href="#">User: <%=user.getName()%></a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Sair</a>                 
+                </div>
+            </div>
+        </nav> 
         <div class="container-fluid">
             <div class="row">
                 <nav class="col-md-2 d-none d-md-block bg-light sidebar">
@@ -60,7 +78,7 @@
                                         <input type="number" class="form-control" id="numero" placeholder="Ex: 1046"> 
                                     </div>
                                     <div class="col-md-5 mb-3">
-                                        <label for="cidade">Cidade/ES</label>
+                                        <label for="cidade">Cidade/UF</label>
                                         <input type="text" class="form-control" id="cidade" placeholder="Juazeiro do Norte-CE"> 
                                     </div>                                    
                                 </div>  
@@ -87,14 +105,14 @@
                                         <input type="number" class="form-control" id="numero-c" placeholder="(99) 9.9999-9999">                                                
                                     </div>  
                                     <div class="col-md-6 mb-3">
-                                        <label for="email">Email<span class="text-muted">(Opcional)</span></label>
+                                        <label for="email">Email</label>
                                         <input type="email" class="form-control" id="email" placeholder="email@emal.com"> 
                                     </div>
                                 </div>                                                                                    
                                 <div>
                                     <hr class="mb-4">
                                     <button class="btn btn-primary btn-lg " type="submit">Cadastrar Aluno</button>
-                                       <button class="btn btn-primary btn-lg " type="submit">Limpar</button>
+                                    <button class="btn btn-primary btn-lg " type="submit">Limpar</button>
                                 </div>
                             </form>
                         </section>

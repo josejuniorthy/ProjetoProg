@@ -1,3 +1,4 @@
+<%@page import="br.fjn.edu.pos.web.domain.User"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -8,12 +9,29 @@
         <title>Alunos</title>
     </head>
     <body>
+        <%
+            User user = (User) session.getAttribute("userLogged");
+        %>
         <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
             <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
-            <img src="../icons/quadro-negro.svg" alt="" width="32" height="32" title="Bootstrap">
-            ESCOLA AED
+                <img src="../icons/quadro-negro.svg" alt="" width="32" height="32" title="Bootstrap">
+                ESCOLA AED
             </a>
-        </nav>
+            <div class="dropdown">
+                <button style="border: none" class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="../icons/cartao-de-estudante.svg" alt="" width="40" height="40" title="cartao-de-estudante">  
+                    Usuário: <%=user.getName()%>
+                </button>
+                <div class="dropdown-menu text-center " aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">
+                        <img src="../icons/do-utilizador.svg" alt="" width="100" height="100" title="Bootstrap">                    
+                    </a>
+                    <a class="dropdown-item" href="#">User: <%=user.getName()%></a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Sair</a>                 
+                </div>
+            </div>
+        </nav> 
         <div class="container-fluid">
             <div class="row">
                 <nav class="col-md-2 d-none d-md-block bg-light sidebar">
@@ -77,7 +95,9 @@
                                             <td>1°Ano</td>
                                             <td>
                                                 <div>
-                                                    <button type="button" class="btn btn-success">Visualizar</button>
+                                                    <a href="../student/students.jsp">
+                                                    <button type="button"  class="btn btn-success">Visualizar</button>
+                                                    </a>
                                                     <button type="button" class="btn btn-primary">Editar</button>
                                                     <button type="button" class="btn btn-danger">Exclir</button>
                                                 </div>
@@ -89,7 +109,9 @@
                                             <td>2° Ano</td>
                                             <td>
                                                 <div>
-                                                    <button type="button" class="btn btn-success">Visualizar</button>
+                                                    <a href="../student/students.jsp">
+                                                    <button type="button"  class="btn btn-success">Visualizar</button>
+                                                    </a>
                                                     <button type="button" class="btn btn-primary">Editar</button>
                                                     <button type="button" class="btn btn-danger">Exclir</button>
                                                 </div>
@@ -101,7 +123,9 @@
                                             <td>3° Ano</td>
                                             <td>
                                                 <div>
-                                                    <button type="button" class="btn btn-success">Visualizar</button>
+                                                    <a href="../student/students.jsp">
+                                                    <button type="button"  class="btn btn-success">Visualizar</button>
+                                                    </a>
                                                     <button type="button" class="btn btn-primary">Editar</button>
                                                     <button type="button" class="btn btn-danger">Exclir</button>
                                                 </div>

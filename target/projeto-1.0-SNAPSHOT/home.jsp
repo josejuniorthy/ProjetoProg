@@ -19,7 +19,7 @@
             </a>
             <div class="dropdown">
                 <button style="border: none" class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   <img src="icons/graduado.svg" alt="" width="32" height="32" title="graduado"> 
+                   <img src="icons/cartao-de-estudante.svg" alt="" width="40" height="40" title="cartao-de-estudante">  
                    Usuário: <%=user.getName()%>
                 </button>
                 <div class="dropdown-menu text-center " aria-labelledby="dropdownMenuButton">
@@ -43,7 +43,7 @@
                                     Página Inicial <span class="sr-only">(current)</span>
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item ">
                                 <a class="nav-link" href="student/create.jsp">
                                     <img src="icons/check-box.svg" alt="" width="32" height="32" title="Bootstrap">
                                     Cadastrar Aluno
@@ -66,7 +66,6 @@
                         <h1>Bem vindo, <%=user.getName()%> !!!</h1>
                     </div>
                     <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-
                 </main>
             </div>
         </div>
