@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 @WebServlet(urlPatterns = {"/auth", "/logout"})
-//@WebServlet("/auth")
+
 public class AuthServlet extends HttpServlet {
 
     @Override
