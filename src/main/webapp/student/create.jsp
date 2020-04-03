@@ -63,29 +63,29 @@
                     </div>
                     <main>
                         <section>
-                            <form action="" method="">
+                            <form aaction="/projeto/students" method="post">
                                 <div class="mb-3">
-                                    <label for="name">Nome Completo</label>
-                                    <input type="text" class="form-control" id="name" name="name"placeholder="Israel Morais Pereira"/>                                                
+                                    <label for="nome">Nome Completo</label>
+                                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Israel Morais Pereira"/>                                                
                                 </div> 
                                 <div class="row">                                          
                                     <div class="col-md-6 mb-3">
                                         <label for="endereco">Endereço</label>
-                                        <input type="text" class="form-control" id="endereco" placeholder="Rua: Fulano de tal">                                                
+                                        <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Rua: Fulano de tal">                                                
                                     </div>
                                     <div class="col-md-1 mb-3">
-                                        <label for="numerocasa">N°</label>
-                                        <input type="number" class="form-control" id="numero" placeholder="Ex: 1046"> 
+                                        <label for="numero">N°</label>
+                                        <input type="text" class="form-control" id="numero" name="numero" placeholder="Ex: 1046"> 
                                     </div>
                                     <div class="col-md-5 mb-3">
                                         <label for="cidade">Cidade/UF</label>
-                                        <input type="text" class="form-control" id="cidade" placeholder="Juazeiro do Norte-CE"> 
+                                        <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Juazeiro do Norte-CE"> 
                                     </div>                                    
                                 </div>  
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
-                                        <label for="country">Turma</label>
-                                        <select class="custom-select d-block w-100" id="turma">
+                                        <label for="turma">Turma</label>
+                                        <select class="custom-select d-block w-100" id="turma" name="turma">
                                             <option >Selecione...</option>
                                             <option>1° Ano</option>
                                             <option>2° Ano</option>
@@ -94,19 +94,19 @@
                                     </div>
 
                                     <div class="col-md-6 mb-3">
-                                        <label for="data">Data/Nasc</label>
-                                        <input type="date" class="form-control" id="data" >                                                
+                                        <label for="age">Data/Nasc</label>
+                                        <input type="text" class="form-control" id="age" name="age">                                                
                                     </div>
                                 </div> 
                                 <hr class="mb-4">                                      
                                 <div class="row">                                          
                                     <div class="col-md-6 mb-3">
-                                        <label for="numero-c">Número de Contato</label>
-                                        <input type="number" class="form-control" id="numero-c" placeholder="(99) 9.9999-9999">                                                
+                                        <label for="numerot">Número de Contato</label>
+                                        <input type="number" class="form-control" id="numerot" name="numerot" placeholder="(99) 9.9999-9999">                                                
                                     </div>  
                                     <div class="col-md-6 mb-3">
                                         <label for="email">Email</label>
-                                        <input type="email" class="form-control" id="email" placeholder="email@emal.com"> 
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="email@emal.com"> 
                                     </div>
                                 </div>                                                                                    
                                 <div>

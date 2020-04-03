@@ -80,17 +80,21 @@
                                 </tr>
                             </thead>
                             <tbody>
+                            <c:forEach items="${studentList}" var="student">
                                 <tr>
-                                    <td>....</td>
-                                    <td>....</td>
-                                    <td>....</td>
-                                    <td>....</td>
-                                    <td>....</td>
-                                    <td>....</td>
-                                    <td>....</td>
-                                    <td>....</td>
-                                    
-                                </tr>                            
+                                    <td>${student.nome}</td>
+                                    <td>${student.address.endereco}</td>
+                                    <td>${student.address.numero}</td>
+                                    <td>${student.address.cidade}</td>
+                                    <td>${student.turma}</td>
+                                    <td>${student.age}</td>
+                                    <td>${student.numerot}</td>
+                                    <td>${student.email}</td>
+                                    <td>
+                                        <fmt:formatDate pattern="dd/MM/yyyy" value="${student.createdAt}"/>
+                                    </td>
+                                </tr> 
+                            </c:forEach>
                             </tbody>
                         </table>
                         <div>
