@@ -98,7 +98,9 @@
                                                     <a href="../student/students.jsp">
                                                     <button type="button"  class="btn btn-success">Visualizar</button>
                                                     </a>
+                                                    <a href="../student/edit.jsp">                                                 
                                                     <button type="button" class="btn btn-primary">Editar</button>
+                                                    </a>
                                                     <button type="button" class="btn btn-danger">Exclir</button>
                                                 </div>
                                             </td>
@@ -112,7 +114,9 @@
                                                     <a href="../student/students.jsp">
                                                     <button type="button"  class="btn btn-success">Visualizar</button>
                                                     </a>
+                                                    <a href="../student/edit.jsp">                                                 
                                                     <button type="button" class="btn btn-primary">Editar</button>
+                                                    </a>
                                                     <button type="button" class="btn btn-danger">Exclir</button>
                                                 </div>
                                             </td>
@@ -126,7 +130,9 @@
                                                     <a href="../student/students.jsp">
                                                     <button type="button"  class="btn btn-success">Visualizar</button>
                                                     </a>
+                                                    <a href="../student/edit.jsp">                                                 
                                                     <button type="button" class="btn btn-primary">Editar</button>
+                                                    </a>
                                                     <button type="button" class="btn btn-danger">Exclir</button>
                                                 </div>
                                             </td>
