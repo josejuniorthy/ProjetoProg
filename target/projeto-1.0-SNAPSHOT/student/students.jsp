@@ -66,17 +66,20 @@
                         </h1>                      
                     </div>
                     <div>
+                       
                         <table class="table table-borderless">
                             <thead>
                                 <tr>
-                                    <th scope="col">Nome</th>
-                                    <th scope="col">Endereço</th>
-                                    <th scope="col">Número</th>
-                                    <th scope="col">Cidade/UF</th>
-                                    <th scope="col">Turma</th>
-                                    <th scope="col">Data/Nasc</th>
-                                    <th scope="col">Número</th>
+                                    <td nowrap="nowrap"> 
+                                    <tr><th scope="col">Nome</th></tr>
+                                    <tr><th scope="col">Endereço</th></tr>
+                                    <tr><th scope="col">Número</th></tr>
+                                    <tr><th scope="col">Cidade/UF</th></tr>
+                                    <tr><th scope="col">Turma</th></tr>
+                                    <tr><th scope="col">Data/Nasc</th></tr>
+                                    <tr><th scope="col">Número</th></tr>
                                     <th scope="col">E-mail</th>
+                                    </td>
                                 </tr>
                             </thead>
                             <tbody>
