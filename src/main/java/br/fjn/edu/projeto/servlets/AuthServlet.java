@@ -1,6 +1,6 @@
-package br.fjn.edu.pos.web.servlets;
+package br.fjn.edu.projeto.servlets;
 
-import br.fjn.edu.pos.web.domain.User;
+import br.fjn.edu.projeto.domain.User;
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;

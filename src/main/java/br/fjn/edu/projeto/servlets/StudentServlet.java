@@ -1,7 +1,7 @@
-package br.fjn.edu.pos.web.servlets;
+package br.fjn.edu.projeto.servlets;
 
-import br.fjn.edu.pos.web.domain.Address;
-import br.fjn.edu.pos.web.domain.Student;
+import br.fjn.edu.projeto.domain.Address;
+import br.fjn.edu.projeto.domain.Student;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
@@ -19,18 +19,18 @@ public class StudentServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 
-        String nome = req.getParameter("nome");
-        String turma = req.getParameter("turma");
-        String numerot = req.getParameter("numerot");
-        String email = req.getParameter("email");
+        String name = req.getParameter("name");
+        String classTu = req.getParameter("classTu");
         Integer age = Integer.parseInt(req.getParameter("age"));
-        String endereco = req.getParameter("endereco");
-        String numero = req.getParameter("numero");
-        String cidade = req.getParameter("cidade");
+        String numberTe = req.getParameter("numberTe");
+        String email = req.getParameter("email");       
+        String street = req.getParameter("street");
+        String numberCa = req.getParameter("numberCa");
+        String city = req.getParameter("city");
         
-        Address address = new Address(endereco, numero, cidade);
+        Address address = new Address(street, numberCa,city);
 
-        Student student = new Student(nome, turma, age, numerot, email);
+        Student student = new Student(name, classTu, age, numberTe, email);
         student.setAddress(address);
         
         ServletContext context = getServletContext();

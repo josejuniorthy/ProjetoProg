@@ -1,4 +1,4 @@
-package br.fjn.edu.pos.web.domain;
+package br.fjn.edu.projeto.domain;
 
 public class User {
 

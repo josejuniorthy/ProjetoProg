@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.fjn.edu.pos.web.conexao;
+package br.fjn.edu.projeto.dao;
 
 /**
  *

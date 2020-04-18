@@ -1,4 +1,6 @@
-<%@page import="br.fjn.edu.pos.web.domain.User"%>
+<%@page import="br.fjn.edu.projeto.domain.User"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -65,37 +67,33 @@
                             Aluno: <%=user.getName()%>
                         </h1>                      
                     </div>
-                    <div>
-                       
+                    <div>                      
                         <table class="table table-borderless">
-                            <thead>
-                                <tr>
-                                    <td nowrap="nowrap"> 
-                                    <tr><th scope="col">Nome</th></tr>
-                                    <tr><th scope="col">Endereço</th></tr>
-                                    <tr><th scope="col">Número</th></tr>
-                                    <tr><th scope="col">Cidade/UF</th></tr>
-                                    <tr><th scope="col">Turma</th></tr>
-                                    <tr><th scope="col">Data/Nasc</th></tr>
-                                    <tr><th scope="col">Número</th></tr>
-                                    <th scope="col">E-mail</th>
-                                    </td>
-                                </tr>
+                            <thead>                          
+                                <td nowrap="nowrap"> 
+                                <tr><th scope="col">Nome</th></tr>
+                                <tr><th scope="col">Endereço</th></tr>
+                                <tr><th scope="col">Número</th></tr>
+                                <tr><th scope="col">Cidade/UF</th></tr>
+                                <tr><th scope="col">Turma</th></tr>
+                                <tr><th scope="col">Data/Nasc</th></tr>
+                                <tr><th scope="col">Número</th></tr>
+                                <tr><th scope="col">E-mail</th></tr>                          
                             </thead>
                             <tbody>
                             <c:forEach items="${studentList}" var="student">
                                 <tr>
-                                    <td>${student.nome}</td>
-                                    <td>${student.address.endereco}</td>
-                                    <td>${student.address.numero}</td>
-                                    <td>${student.address.cidade}</td>
-                                    <td>${student.turma}</td>
+                                    <td>${student.name}</td>
+                                    <td>${student.address.street}</td>
+                                    <td>${student.address.numberCa}</td>
+                                    <td>${student.address.city}</td>
+                                    <td>${student.classTu}</td>
                                     <td>${student.age}</td>
-                                    <td>${student.numerot}</td>
+                                    <td>${student.numberTe}</td>
                                     <td>${student.email}</td>
                                     <td>
-                                        <fmt:formatDate pattern="dd/MM/yyyy" value="${student.createdAt}"/>
-                                    </td>
+                                <fmt:formatDate pattern="dd/MM/yyyy" value="${student.createdAt}"/>
+                                </td>
                                 </tr> 
                             </c:forEach>
                             </tbody>

@@ -1,4 +1,4 @@
-<%@page import="br.fjn.edu.pos.web.domain.User"%>
+<%@page import="br.fjn.edu.projeto.domain.User"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -63,29 +63,29 @@
                     </div>
                     <main>
                         <section>
-                            <form aaction="/projeto/students" method="post">
+                            <form action="/projeto/students" method="post">                           
                                 <div class="mb-3">
-                                    <label for="nome">Nome Completo</label>
-                                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Israel Morais Pereira"/>                                                
+                                    <label for="name">Nome Completo</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Israel Morais Pereira"/>                                                
                                 </div> 
                                 <div class="row">                                          
                                     <div class="col-md-6 mb-3">
-                                        <label for="endereco">Endereço</label>
-                                        <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Rua: Fulano de tal">                                                
+                                        <label for="street">Endereço</label>
+                                        <input type="text" class="form-control" id="street" name="street" placeholder="Rua: Fulano de tal">                                                
                                     </div>
                                     <div class="col-md-1 mb-3">
-                                        <label for="numero">N°</label>
-                                        <input type="text" class="form-control" id="numero" name="numero" placeholder="Ex: 1046"> 
+                                        <label for="numberCa">N°</label>
+                                        <input type="text" class="form-control" id="numberCa" name="numberCa" placeholder="Ex: 1046"> 
                                     </div>
                                     <div class="col-md-5 mb-3">
-                                        <label for="cidade">Cidade/UF</label>
-                                        <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Juazeiro do Norte-CE"> 
+                                        <label for="city">Cidade/UF</label>
+                                        <input type="text" class="form-control" id="city" name="city" placeholder="Juazeiro do Norte-CE"> 
                                     </div>                                    
                                 </div>  
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
-                                        <label for="turma">Turma</label>
-                                        <select class="custom-select d-block w-100" id="turma" name="turma">
+                                        <label for="classTu">Turma</label>
+                                        <select class="custom-select d-block w-100" id="classTu" name="classTu">
                                             <option >Selecione...</option>
                                             <option>1° Ano</option>
                                             <option>2° Ano</option>
@@ -101,8 +101,8 @@
                                 <hr class="mb-4">                                      
                                 <div class="row">                                          
                                     <div class="col-md-6 mb-3">
-                                        <label for="numerot">Número de Contato</label>
-                                        <input type="number" class="form-control" id="numerot" name="numerot" placeholder="(99) 9.9999-9999">                                                
+                                        <label for="numberTe">Número de Contato</label>
+                                        <input type="number" class="form-control" id="numberTe" name="numberTe" placeholder="(99) 9.9999-9999">                                                
                                     </div>  
                                     <div class="col-md-6 mb-3">
                                         <label for="email">Email</label>
@@ -112,7 +112,6 @@
                                 <div>
                                     <hr class="mb-4">
                                     <button class="btn btn-primary btn-lg " type="submit">Cadastrar Aluno</button>
-                                    <button class="btn btn-primary btn-lg " type="reset">Limpar</button>
                                 </div>
                             </form>
                         </section>

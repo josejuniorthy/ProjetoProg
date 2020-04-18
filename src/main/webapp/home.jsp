@@ -1,4 +1,4 @@
-<%@page import="br.fjn.edu.pos.web.domain.User"%>
+<%@page import="br.fjn.edu.projeto.domain.User"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
