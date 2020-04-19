@@ -4,6 +4,7 @@ import java.util.Date;
 
 
 public class Student {
+    private String id;
     private String name;
     private String classTu;
     private Integer age;
@@ -21,7 +22,13 @@ public class Student {
         this.createdAt = createdAt;
     }
 
-    
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
     public String getName() {
         return name;
     }

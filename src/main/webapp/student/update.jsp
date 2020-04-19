@@ -63,29 +63,31 @@
                     </div>
                     <main>
                         <section>
-                            <form aaction="/projeto/students" method="post">
+                            <form action="/projeto/students" method="post">
+                                <input type="hidden" name="id" value="${customerToUpdate.id}"/>
+                                <input type="hidden" name="operation" value="PUT"/>
                                 <div class="mb-3">
                                     <label for="nome">Nome Completo</label>
-                                    <input type="text" class="form-control" id="nome" name="nome">                                                
+                                    <input type="text" class="form-control" id="nome" name="nome" value="${studentToUpdate.name}">                                                
                                 </div> 
                                 <div class="row">                                          
                                     <div class="col-md-6 mb-3">
                                         <label for="endereco">Endereço</label>
-                                        <input type="text" class="form-control" id="endereco" name="endereco">                                                
+                                        <input type="text" class="form-control" id="endereco" name="endereco" value="${studentToUpdate.street}">                                                
                                     </div>
                                     <div class="col-md-1 mb-3">
                                         <label for="numero">N°</label>
-                                        <input type="text" class="form-control" id="numero" name="numero"> 
+                                        <input type="text" class="form-control" id="numero" name="numero" value="${studentToUpdate.numberCa}"> 
                                     </div>
                                     <div class="col-md-5 mb-3">
                                         <label for="cidade">Cidade/UF</label>
-                                        <input type="text" class="form-control" id="cidade" name="cidade"> 
+                                        <input type="text" class="form-control" id="cidade" name="cidade" value="${studentToUpdate.city}"> 
                                     </div>                                    
                                 </div>  
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <label for="turma">Turma</label>
-                                        <select class="custom-select d-block w-100" id="turma" name="turma">
+                                        <select class="custom-select d-block w-100" id="turma" name="turma" value="${studentToUpdate.classTu}">
                                             <option >Selecione...</option>
                                             <option>1° Ano</option>
                                             <option>2° Ano</option>
@@ -95,18 +97,18 @@
 
                                     <div class="col-md-6 mb-3">
                                         <label for="age">Data/Nasc</label>
-                                        <input type="text" class="form-control" id="age" name="age">                                                
+                                        <input type="text" class="form-control" id="age" name="age" value="${studentToUpdate.age}">                                                
                                     </div>
                                 </div> 
                                 <hr class="mb-4">                                      
                                 <div class="row">                                          
                                     <div class="col-md-6 mb-3">
                                         <label for="numerot">Número de Contato</label>
-                                        <input type="number" class="form-control" id="numerot" name="numerot">                                                
+                                        <input type="number" class="form-control" id="numerot" name="numerot" value="${studentToUpdate.numberTe}">                                                
                                     </div>  
                                     <div class="col-md-6 mb-3">
                                         <label for="email">Email</label>
-                                        <input type="email" class="form-control" id="email" name="email"> 
+                                        <input type="email" class="form-control" id="email" name="email" value="${studentToUpdate.email}"> 
                                     </div>
                                 </div>                                                                                    
                                 <div>

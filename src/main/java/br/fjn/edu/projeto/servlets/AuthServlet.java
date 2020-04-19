@@ -26,7 +26,7 @@ public class AuthServlet extends HttpServlet {
         ServletContext context = getServletContext();
 
         String messageResponse = null;
-        if (user.getName().equalsIgnoreCase("joao") && user.getPassword().equals("123")) {
+        if (user.getName().equalsIgnoreCase("israel") && user.getPassword().equals("123")) {
             HttpSession session = request.getSession();
             session.setAttribute("userLogged", user);
             response.sendRedirect("home.jsp");

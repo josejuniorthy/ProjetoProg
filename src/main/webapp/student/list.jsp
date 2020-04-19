@@ -89,54 +89,24 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <c:forEach items="${studentList}" var="student">
                                         <tr>
-                                            <th scope="row">1</th>
-                                            <td>Mark Mark Mark</td>
-                                            <td>1°Ano</td>
+                                            <th scope="row"></th>
+                                            <td>${student.name}</td>
+                                            <td>${student.classTu}</td>
                                             <td>
                                                 <div>
                                                     <a href="../student/students.jsp">
                                                     <button type="button"  class="btn btn-success">Visualizar</button>
                                                     </a>
-                                                    <a href="../student/edit.jsp">                                                 
+                                                    <a href="../student/update.jsp">                                                 
                                                     <button type="button" class="btn btn-primary">Editar</button>
                                                     </a>
                                                     <button type="button" class="btn btn-danger">Exclir</button>
                                                 </div>
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Jacob Mark Mark</td>
-                                            <td>2° Ano</td>
-                                            <td>
-                                                <div>
-                                                    <a href="../student/students.jsp">
-                                                    <button type="button"  class="btn btn-success">Visualizar</button>
-                                                    </a>
-                                                    <a href="../student/edit.jsp">                                                 
-                                                    <button type="button" class="btn btn-primary">Editar</button>
-                                                    </a>
-                                                    <button type="button" class="btn btn-danger">Exclir</button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Larry Mark Mark</td>
-                                            <td>3° Ano</td>
-                                            <td>
-                                                <div>
-                                                    <a href="../student/students.jsp">
-                                                    <button type="button"  class="btn btn-success">Visualizar</button>
-                                                    </a>
-                                                    <a href="../student/edit.jsp">                                                 
-                                                    <button type="button" class="btn btn-primary">Editar</button>
-                                                    </a>
-                                                    <button type="button" class="btn btn-danger">Exclir</button>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                        </tr>  
+                                        </c:forEach>
                                     </tbody>
                                 </table>
                             </div>

@@ -14,7 +14,7 @@
         %>
         <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
             <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
-                <img src="../icons/ebook.svg" alt="" width="32" height="32" title="Bootstrap">
+                <img src="../icons/ebook.svg" alt="" width="32" height="32" title="ebook">
                 ESCOLA AED
             </a>
             <div class="dropdown">
@@ -67,21 +67,7 @@
                                 <div class="mb-3">
                                     <label for="name">Nome Completo</label>
                                     <input type="text" class="form-control" id="name" name="name" placeholder="Israel Morais Pereira"/>                                                
-                                </div> 
-                                <div class="row">                                          
-                                    <div class="col-md-6 mb-3">
-                                        <label for="street">Endereço</label>
-                                        <input type="text" class="form-control" id="street" name="street" placeholder="Rua: Fulano de tal">                                                
-                                    </div>
-                                    <div class="col-md-1 mb-3">
-                                        <label for="numberCa">N°</label>
-                                        <input type="text" class="form-control" id="numberCa" name="numberCa" placeholder="Ex: 1046"> 
-                                    </div>
-                                    <div class="col-md-5 mb-3">
-                                        <label for="city">Cidade/UF</label>
-                                        <input type="text" class="form-control" id="city" name="city" placeholder="Juazeiro do Norte-CE"> 
-                                    </div>                                    
-                                </div>  
+                                </div>                                
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <label for="classTu">Turma</label>
@@ -108,7 +94,21 @@
                                         <label for="email">Email</label>
                                         <input type="email" class="form-control" id="email" name="email" placeholder="email@emal.com"> 
                                     </div>
-                                </div>                                                                                    
+                                </div> 
+                                <div class="row">                                          
+                                    <div class="col-md-6 mb-3">
+                                        <label for="street">Endereço</label>
+                                        <input type="text" class="form-control" id="street" name="street" placeholder="Rua: Fulano de tal">                                                
+                                    </div>
+                                    <div class="col-md-1 mb-3">
+                                        <label for="numberCa">N°</label>
+                                        <input type="text" class="form-control" id="numberCa" name="numberCa" placeholder="Ex: 1046"> 
+                                    </div>
+                                    <div class="col-md-5 mb-3">
+                                        <label for="city">Cidade/UF</label>
+                                        <input type="text" class="form-control" id="city" name="city" placeholder="Juazeiro do Norte-CE"> 
+                                    </div>                                    
+                                </div>  
                                 <div>
                                     <hr class="mb-4">
                                     <button class="btn btn-primary btn-lg " type="submit">Cadastrar Aluno</button>

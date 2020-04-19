@@ -64,7 +64,7 @@
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                         <h1 class="h2">
                             <img src="../icons/graduado.svg" alt="" width="100" height="100" title="graduado"> 
-                            Aluno: <%=user.getName()%>
+                            Aluno: ${student.name}
                         </h1>                      
                     </div>
                     <div>                      
@@ -72,25 +72,25 @@
                             <thead>                          
                                 <td nowrap="nowrap"> 
                                 <tr><th scope="col">Nome</th></tr>
-                                <tr><th scope="col">Endereço</th></tr>
-                                <tr><th scope="col">Número</th></tr>
-                                <tr><th scope="col">Cidade/UF</th></tr>
                                 <tr><th scope="col">Turma</th></tr>
                                 <tr><th scope="col">Data/Nasc</th></tr>
                                 <tr><th scope="col">Número</th></tr>
-                                <tr><th scope="col">E-mail</th></tr>                          
+                                <tr><th scope="col">E-mail</th></tr> 
+                                <tr><th scope="col">Endereço</th></tr>
+                                <tr><th scope="col">Número</th></tr>
+                                <tr><th scope="col">Cidade/UF</th></tr>                                                                                                                 
                             </thead>
                             <tbody>
                             <c:forEach items="${studentList}" var="student">
                                 <tr>
                                     <td>${student.name}</td>
-                                    <td>${student.address.street}</td>
-                                    <td>${student.address.numberCa}</td>
-                                    <td>${student.address.city}</td>
                                     <td>${student.classTu}</td>
                                     <td>${student.age}</td>
                                     <td>${student.numberTe}</td>
                                     <td>${student.email}</td>
+                                    <td>${student.address.street}</td>
+                                    <td>${student.address.numberCa}</td>
+                                    <td>${student.address.city}</td>                                                                                                     
                                     <td>
                                 <fmt:formatDate pattern="dd/MM/yyyy" value="${student.createdAt}"/>
                                 </td>
